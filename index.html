@@ -382,6 +382,8 @@ button.btn{font-family:var(--body);background:transparent}
 .social{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .social a{padding:10px 22px;border-radius:50px;border:1px solid var(--border);font-size:.92rem;transition:transform .3s,border-color .3s,color .3s}
 .social a:hover{transform:translateY(-5px);border-color:var(--cyan);color:var(--cyan)}
+.social a{display:inline-flex;align-items:center;gap:10px}
+.social a svg{width:22px;height:20px;flex:none;fill:currentColor}
 .pulse-stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:400px}
 .pulse-avatar{
   position:relative;z-index:2;width:min(300px,78%);aspect-ratio:1;border-radius:28px;overflow:hidden;
@@ -494,6 +496,7 @@ footer{text-align:center;padding:36px 20px 44px;color:var(--muted);font-size:.88
 .h-ico.sm svg{width:22px;height:22px}
 .edu-extra .panel h3{margin-bottom:10px}
 .edu-extra .degree{font-size:1.25rem}
+
 /* Education panel */
 .edu-panel{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
 .edu-panel .certs{margin:0;padding:0 0 0 40px;border-top:0;border-left:1px solid var(--border)}
@@ -851,16 +854,21 @@ footer{text-align:center;padding:36px 20px 44px;color:var(--muted);font-size:.88
       </div>
       <div class="edu-extra">
         <div class="panel reveal-left">
-          <span class="h-ico sm"><svg><use href="#i-cap"/></svg></span>
-          <h3>Diploma</h3>
-          <div class="degree">Digital Marketing Diploma</div>
-          <div class="badges" style="margin-top:14px"><span class="badge cy">Digital marketing</span></div>
+                    <div>
+            <span class="h-ico sm"><svg><use href="#i-cap"/></svg></span>
+            <h3>Diploma</h3>
+            <div class="degree">Digital Marketing Diploma</div>
+            <div class="school">Presidents of Market</div>
+            <div class="year">September 2021</div>
+            <div class="badges" style="margin-top:14px"><span class="badge cy">3 months</span><span class="badge am">Grade: Very Good</span></div>
+          </div>
         </div>
         <div class="panel reveal-right">
           <span class="h-ico sm"><svg><use href="#i-layers"/></svg></span>
           <h3>Internship</h3>
           <div class="degree">Ergasti Digital</div>
-          <div class="badges" style="margin-top:14px"><span class="badge hot">Internship</span></div>
+          <div class="year">2 July 2024 – 1 October 2024</div>
+          <div class="badges" style="margin-top:14px"><span class="badge hot">Internship</span><span class="badge">3 months</span></div>
         </div>
       </div>
     </div>
@@ -886,9 +894,9 @@ footer{text-align:center;padding:36px 20px 44px;color:var(--muted);font-size:.88
       <div class="pulse-avatar"><img id="contactPhoto" alt="Mohamed Emam portfolio 2026 cover" width="960" height="960"></div>
     </div>
     <div class="social reveal">
-        <a href="https://www.behance.net/mohamedemam35" target="_blank" rel="noopener">Behance</a>
-        <a href="https://www.linkedin.com/in/mohamed-emam-2938a6189" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.instagram.com/midoemam730" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.behance.net/mohamedemam35" target="_blank" rel="noopener"><svg viewBox="0 3 26 18" aria-hidden="true"><path fill-rule="evenodd" d="M2 4h5.2c2.4 0 4 1.2 4 3.3 0 1.4-.8 2.4-2 2.9 1.6.4 2.6 1.6 2.6 3.3 0 2.4-1.8 3.5-4.4 3.5H2zM4.5 6v3h2.4c1.2 0 1.8-.6 1.8-1.5S8.1 6 6.9 6zM4.5 11.2V16h3c1.4 0 2.2-.7 2.2-2.4s-.8-2.4-2.2-2.4z"/><rect x="15.3" y="4.4" width="7.4" height="1.8" rx=".9"/><circle cx="19.8" cy="13.3" r="3.5" fill="none" stroke="currentColor" stroke-width="2.1" stroke-dasharray="19.6 2.4" transform="rotate(40 19.8 13.3)"/><path d="M16.3 13.3h7" stroke="currentColor" stroke-width="2.1" fill="none"/></svg><span>Behance</span></a>
+        <a href="https://www.linkedin.com/in/mohamed-emam-2938a6189" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+        <a href="https://www.instagram.com/midoemam730" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg><span>Instagram</span></a>
       </div>
   </section>
 </main>
